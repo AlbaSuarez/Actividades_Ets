@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Actividad1UML">
+  <ClassDiagramComponents>
+    <Class name="Circulo" package="" visibility="public" xPosition="192.0" yPosition="286.0">
+      <Fields>
+        <Field name="radio" type="Float" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Punto" package="" visibility="public" xPosition="192.0" yPosition="110.0">
+      <Fields>
+        <Field name="centroX" type="Float" visibility="protected"/>
+        <Field name="centroY" type="Float" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cono" package="" visibility="public" xPosition="192.0" yPosition="444.0">
+      <Fields>
+        <Field name="altura" type="float" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Imprimir" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Cono" target="Circulo"/>
+    <IsRelation name="is" source="Circulo" target="Punto"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
